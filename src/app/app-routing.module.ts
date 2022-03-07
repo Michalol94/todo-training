@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePagePageModule } from './pages/home-page.page-module';
+import { HomePageModule } from './pages/home.page-module';
+import { AboutUsPageModule } from './pages/about-us.page-module';
 
 const routes: Routes = [{ 
         path: 'home', 
-        loadChildren: () => HomePagePageModule
+        loadChildren: () => HomePageModule
       },
+  { 
+        path: 'o-nas', 
+        loadChildren: () => AboutUsPageModule
+      }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), HomePagePageModule],
+  imports: [RouterModule.forRoot(routes), HomePageModule, AboutUsPageModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
