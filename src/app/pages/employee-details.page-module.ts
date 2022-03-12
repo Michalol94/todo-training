@@ -11,7 +11,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
         path: '',
         component: EmployeeDetailsPage,
       }
-    ])],
+    ])
+  ],
   declarations: [EmployeeDetailsPage],
   providers: [],
   exports: []

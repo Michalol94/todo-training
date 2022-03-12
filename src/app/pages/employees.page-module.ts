@@ -10,6 +10,10 @@ import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/
       {
         path: '',
         component: EmployeesPage,
+      },
+      {
+        path: 'wsrodku',
+        component: EmployeesPage,
       }
     ]),
     OurTeamComponentModule
