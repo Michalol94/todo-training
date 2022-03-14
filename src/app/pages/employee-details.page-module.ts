@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { EmployeeDetailsPage } from './employee-details.page';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { EmployeeDetailComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/employee-detail.component-module';
 
 @NgModule({
   imports: [CommonModule, CarouselModule.forRoot(),
@@ -11,8 +12,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
         path: '',
         component: EmployeeDetailsPage,
       }
-    ])
-  ],
+    ]), EmployeeDetailComponentModule],
   declarations: [EmployeeDetailsPage],
   providers: [],
   exports: []
