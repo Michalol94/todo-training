@@ -1,1 +1,12 @@
-<h1>{{(param$ | async)?.name}}</h1>
+<!-- <h1>{{(param$ | async)?.name}}</h1> -->
+<div class="container">
+    <div class="card mb-3">
+        <img class="card-img-top" [src]="[(queryParams$ | async)?.params?.image]" alt="Card image cap" />
+        <div class="card-body">
+            <h5 class="card-title">{{(param$ | async)?.name}}</h5>
+        </div>
+    </div>
+    <button type="button" [routerLink]="['/pracownik']" class="btn btn-primary btn-lg btn-block">
+        Back
+    </button>
+</div>
