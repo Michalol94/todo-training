@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { EmployeeDetailsPage } from './employee-details.page';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { EmployeeDetailComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/employee-detail.component-module';
+import { EmployeeDetailComponentModule } from '@team';
 
 @NgModule({
   imports: [CommonModule, CarouselModule.forRoot(),

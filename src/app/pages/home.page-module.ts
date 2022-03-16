@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
+import { OurTeamComponentModule } from '@team';
 
 @NgModule({
   imports: [CommonModule, CarouselModule.forRoot(),
