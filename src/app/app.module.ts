@@ -8,6 +8,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CommonModule } from '@angular/common';
+import { NavbarComponentModule } from '@navigations';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CommonModule } from '@angular/common';
     CollapseModule.forRoot(),
     CommonModule,
     BsDropdownModule.forRoot(),
+    NavbarComponentModule
 
   ],
   providers: [],

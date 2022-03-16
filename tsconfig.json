@@ -28,6 +28,13 @@
         "dist/team/team",
         "dist/team"
       ],
+      "navigations": [
+        "dist/navigations/navigations",
+        "dist/navigations"
+      ],
+      "@navigations": [
+        "projects/navigations/src/public-api.ts"
+      ],
       "@team": [
         "projects/team/src/public-api.ts"
       ]
