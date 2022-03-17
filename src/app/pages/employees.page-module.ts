@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { EmployeesPage } from './employees.page';
-import { OurTeamComponentModule } from '@team';
+import { FirebaseEmployeesServiceModule, OurTeamComponentModule } from '@team';
 
 @NgModule({
-  imports: [CommonModule,
+  imports: [CommonModule, FirebaseEmployeesServiceModule,
     RouterModule.forChild([
       {
         path: '',

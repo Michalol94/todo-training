@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { OurTeamComponentModule } from '@team';
+import { FirebaseEmployeesServiceModule, OurTeamComponentModule } from '@team';
 
 @NgModule({
-  imports: [CommonModule, CarouselModule.forRoot(),
+  imports: [CommonModule, FirebaseEmployeesServiceModule, CarouselModule.forRoot(),
     RouterModule.forChild([
       {
         path: '',
