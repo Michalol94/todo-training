@@ -9,6 +9,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CommonModule } from '@angular/common';
 import { NavbarComponentModule } from '@navigations';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NavbarComponentModule } from '@navigations';
     CollapseModule.forRoot(),
     CommonModule,
     BsDropdownModule.forRoot(),
-    NavbarComponentModule
+    NavbarComponentModule,
+    AngularFireModule.initializeApp(environment.firestoreConfig)
 
   ],
   providers: [],

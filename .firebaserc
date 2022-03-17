@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lowgular-course-e6105": {
+      "hosting": {
+        "todo-training": [
+          "lowgular-course-e6105"
+        ]
+      }
+    }
+  }
+}

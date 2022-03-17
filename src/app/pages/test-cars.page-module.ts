@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TestCarsPage } from './test-cars.page';
 import { CarListComponentModule } from '@cars';
+import { FirebaseFirebaseCarsServiceModule } from '../../../projects/cars/src/lib/adapters/secondary/infrastructure/firebase-firebase-cars.service-module';
 
 @NgModule({
   imports: [CommonModule,
@@ -12,7 +13,8 @@ import { CarListComponentModule } from '@cars';
         component: TestCarsPage,
       }
     ]),
-    CarListComponentModule
+    CarListComponentModule,
+    FirebaseFirebaseCarsServiceModule
   ],
   declarations: [TestCarsPage],
   providers: [],

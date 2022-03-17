@@ -1,7 +1,9 @@
-<ul>
+<!-- <ul>
     <li *ngFor="let car of (order$ | async).cars">{{car.brand | json}}</li>
 </ul>
 
 <ul>
-    <li>{{ (order$ | async).cars | json }}</li>
+    <li>{{ (order$ | async).cars | json }}</li> -->
+<ul>
+    <li *ngFor="let item of cars$ | async">{{item | json}}</li>
 </ul>
