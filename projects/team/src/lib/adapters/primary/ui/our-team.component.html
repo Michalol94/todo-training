@@ -10,7 +10,8 @@
                             <p class="fw-bold">{{employee.name}}</p>
                         </h5>
                     </ul>
-                    <p class="fw-bold">Department: {{ employee.department.name }}</p>
+                    <p class="fw-bold" *ngFor="let department of employee.department">Department: {{department.name }}
+                    </p>
                     <p class="fw-bold">Count number: {{ employee.employeeCount }}</p>
                     <p class="card-text">{{employee.bio}}</p>
                 </div>
