@@ -12,6 +12,5 @@ export class TestFormComponent {
         alert(
             `name: ${testForm.value.name} text: ${testForm.value.image}`
         );
-
     }
 }

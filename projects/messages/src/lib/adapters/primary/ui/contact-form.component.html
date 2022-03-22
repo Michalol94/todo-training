@@ -1,6 +1,5 @@
-<p>Hello Contact</p>
-<form [formGroup]="messageForm" (ngSubmit)="onFormSubmited(messageForm)">
-    <input type="text" formControlName="email" placeholder="Email">
+<form [formGroup]="createMessage" (ngSubmit)="onCreateMessageSubmited(createMessage)">
     <input type="text" formControlName="text" placeholder="Text">
+    <input type="text" formControlName="email" placeholder="Email">
     <input type="submit" value="Submit">
 </form>
