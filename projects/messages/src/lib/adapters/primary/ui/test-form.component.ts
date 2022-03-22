@@ -13,4 +13,5 @@ export class TestFormComponent {
             `name: ${testForm.value.name} text: ${testForm.value.image}`
         );
     }
+
 }
