@@ -22,7 +22,7 @@ const routes: Routes = [{
   loadChildren: () => EmployeesPageModule
 },
 {
-  path: 'pracownik/:name',
+  path: 'pracownik',
   loadChildren: () => EmployeeDetailsPageModule
 },
 {
@@ -37,10 +37,10 @@ const routes: Routes = [{
   path: 'cars',
   loadChildren: () => TestCarsPageModule
 },
-  { 
-        path: 'admin', 
-        loadChildren: () => AdminPageModule
-      }
+{
+  path: 'admin',
+  loadChildren: () => AdminPageModule
+}
 ];
 
 @NgModule({

@@ -1,5 +1,22 @@
 <div class="container">
     <div class="card mb-3">
+        <img class="card-img-top" [src]="[(employee$ | async).imageUrl]" alt="Card image cap" />
+        <div class="card-body">
+            <h5 class="card-title">{{(employee$ | async)?.name}}</h5>
+        </div>
+        <p class="fw-bold">Department: {{(employee$ | async).department.name }}
+        </p>
+        <p class="fw-bold">Count number: {{
+            (employee$ | async).department.employeeCount }}</p>
+    </div>
+    <button type="button" [routerLink]="['/pracownik']" class="btn btn-primary btn-lg btn-block">
+        Back
+    </button>
+</div>
+<!-- {{employee$ | async | json}} -->
+
+<!-- <div class="container">
+    <div class="card mb-3">
         <img class="card-img-top" [src]="[(queryParams$ | async)?.params?.image]" alt="Card image cap" />
         <div class="card-body">
             <h5 class="card-title">{{(param$ | async)?.name}}</h5>
@@ -8,4 +25,4 @@
     <button type="button" [routerLink]="['/pracownik']" class="btn btn-primary btn-lg btn-block">
         Back
     </button>
-</div>
+</div> -->

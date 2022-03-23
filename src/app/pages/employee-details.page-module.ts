@@ -9,7 +9,7 @@ import { EmployeeDetailComponentModule } from '@team';
   imports: [CommonModule, CarouselModule.forRoot(),
     RouterModule.forChild([
       {
-        path: '',
+        path: ':employeeId',
         component: EmployeeDetailsPage,
       }
     ]), EmployeeDetailComponentModule],
