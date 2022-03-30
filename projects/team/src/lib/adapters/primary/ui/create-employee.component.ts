@@ -23,16 +23,18 @@ export class CreateEmployeeComponent {
     if (createEmployee.invalid) {
       return;
     }
-    this._addsEmployeeDto.add(createEmployee.getRawValue());
+    // this._addsEmployeeDto.add(createEmployee.getRawValue());
+    this._addsEmployeeDto.add({
+      id: createEmployee.get('id').value,
+      name: createEmployee.get('name').value,
+      imageUrl: createEmployee.get('imageUrl').value,
+      bio: createEmployee.get('bio').value,
+      department: {
+        name: createEmployee.get('department.name').value,
+        employeeCount: createEmployee.get('department.employeeCount').value
+      }
+    });
     this.createEmployee.reset();
-    // this._addsEmployeeDto.add({
-    //   id: createEmployee.get('id').value,
-    //   name: createEmployee.get('name').value,
-    //   imageUrl: createEmployee.get('imageUrl').value,
-    //   bio: createEmployee.get('bio').value,
-    //   department.name: createEmployee.get('department.name').value,
-    //   department.employeeCount: createEmployee.get('department.employeeCount').value,
-    // });
   }
 
 }

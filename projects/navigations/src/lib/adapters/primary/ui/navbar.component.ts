@@ -19,6 +19,10 @@ export class NavbarComponent {
             text: 'Skontaktuj się z nami',
             link: '/kontakt'
         },
+        {
+            text: 'admin',
+            link: '/admin'
+        },
 
         {
             text: 'test form',
