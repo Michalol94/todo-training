@@ -2,9 +2,8 @@
     <div class="row row-cols-1 row-cols-md-3">
         <div class="col mb-4" *ngFor="let employee of employees$ | async">
             <div class="card">
-                <img [routerLink]="['/pracownik/' + employee.id]" (click)="onEmployeeClicked(employee)"
-                    [queryParams]="{ image: employee.imageUrl }" [src]="[employee.imageUrl]" class="card-img-top"
-                    [alt]="[employee.name]">
+                <img [routerLink]="['/pracownik/' + employee.id]" [queryParams]="{ image: employee.imageUrl }"
+                    [src]="[employee.imageUrl]" class="card-img-top" [alt]="[employee.name]">
                 <div class="card-body">
                     <ul class="nav justify-content-center">
                         <h5>
