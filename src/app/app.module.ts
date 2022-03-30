@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponentModule } from '@navigations';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { InMemoryContextStorageModule } from '@team';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { environment } from 'src/environments/environment';
     CommonModule,
     BsDropdownModule.forRoot(),
     NavbarComponentModule,
-    AngularFireModule.initializeApp(environment.firestoreConfig)
+    AngularFireModule.initializeApp(environment.firestoreConfig),
+    InMemoryContextStorageModule
 
   ],
   providers: [],

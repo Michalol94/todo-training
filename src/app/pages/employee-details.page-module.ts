@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { EmployeeDetailsPage } from './employee-details.page';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { EmployeeDetailComponentModule } from '@team';
+import { EmployeeDetailComponentModule, FirebaseEmployeesServiceModule } from '@team';
 
 @NgModule({
   imports: [CommonModule, CarouselModule.forRoot(),
@@ -12,7 +12,7 @@ import { EmployeeDetailComponentModule } from '@team';
         path: ':employeeId',
         component: EmployeeDetailsPage,
       }
-    ]), EmployeeDetailComponentModule],
+    ]), EmployeeDetailComponentModule, FirebaseEmployeesServiceModule],
   declarations: [EmployeeDetailsPage],
   providers: [],
   exports: []
